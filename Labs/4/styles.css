@@ -1,0 +1,22 @@
+h1{
+    color: rgb(255, 0, 0);
+}
+
+body{
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    color: blue;
+}
+
+ul{
+    
+    background-color: black;
+}
+ol{
+    margin-left: -40px;
+    color: brown;
+}
