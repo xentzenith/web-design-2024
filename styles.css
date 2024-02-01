@@ -1,0 +1,29 @@
+ body{
+    margin: 1% 18%;
+    background-color: #FAEBB4;
+ }
+
+
+ #menu a{
+    text-decoration: underline;
+ }
+ 
+header div{
+    background-color: #D2B48C;
+    width: 1000px;
+    height: 100px;
+ }
+
+header h1{
+    padding-top: 30px
+ }
+
+ footer div{
+    background-color: #D2B48C;
+    width: 1000px;
+    height: 45px;
+ }
+
+footer h1{
+    padding-top: 30px
+ }
