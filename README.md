@@ -2,7 +2,7 @@
 
 Projects
 <ul>
-    <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Project/1/'>Project 1: My Portfolio</a></li>
+    <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Projects/1/'>Project 1: My Portfolio</a></li>
     <br>
 </ul>
 
