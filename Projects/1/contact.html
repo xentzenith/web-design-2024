@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        p {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 30vh;
+            background-color: rgba(171, 12, 12, 0.4);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        div a {
+            text-decoration: none;
+            color: white;
+        }
+
+        div img {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(6, 6, 6);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(130, 4, 4, 1);
+            backdrop-filter: blur(8px);
+            transition: transform 0.1s ease;
+        }
+
+        div img:hover {
+            transform: scale(1.05);
+        }
+
+       bgvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        video::-webkit-media-controls-fullscreen-button{
+            display: none;
+        }
+        
+
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            backdrop-filter: blur(538px);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Projects/1/index.html">Home</a>
+            <a href="/Projects/1/projects.html">Projects</a>
+            <a href="/Projects/1/aboutme.html">About Me</a>
+            <a href="/Projects/1/contact.html">Contact</a>
+        </nav>
+    </header>
+    <strong><p>You can reach me using:</p></strong>
+    <div id="bgvideo">
+        <video autoplay loop id="myVideo" controls>
+            <source src="https://cdn.discordapp.com/attachments/1103385057151963198/1204416526749405194/10_minute_session_Programming_Coding___Hacking_music.mp4?ex=65d4a74c&is=65c2324c&hm=f16939e5f7d3f88823f39d13e0465b3e666189f628a50fe31b3deb0319eab65c&" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+     </div>
+    <div style="text-align: center;">
+        <a href="https://discord.com/users/1194296454752251996">
+        <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="whatsapp" style="width: 50px; height: 50px;">
+        </a>
+        <a href="mailto: ilkeroztbm@gmail.com">
+        <img src="https://imaginethatcreative.net/blog/wp-content/uploads/2023/06/2250206.png" alt="whatsapp" style="width: 50px; height: 50px;">
+        </a>
+    </div>
+</body>
+</html>

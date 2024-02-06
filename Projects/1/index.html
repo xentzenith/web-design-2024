@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        header nav {
+            display: flex;
+            background-color: rgba(100, 100, 100, 0.2);
+            padding: 0px;
+            justify-content: center;
+            z-index: 1;
+            backdrop-filter: blur(
+                8px
+            ); /* Disable this to have a Macos-like top bar
+            border-radius: 0px 0px 10px 10px;
+            border-top: none;
+            margin-left: 50px;
+            margin-right: 50px;*/
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+        }
+
+        header nav a {
+            transition: color 0.1s ease;
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        header nav a:hover {
+            color: #aaa;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 10vh;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+            width: 20%;
+            border-radius: 50%;
+            border: 5px solid rgb(55, 231, 12);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /*for navbar i used codepen template: https://codepen.io/hello-world-exclamation-mark/pen/xxBrOLM */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Projects/1/index.html">Home</a>
+            <a href="/Projects/1/projects.html">Projects</a>
+            <a href="/Projects/1/aboutme.html">About Me</a>
+            <a href="/Projects/1/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <img src="logo.png">
+    <h1>Welcome to my school project</h1>
+    <p>I am a student at Humber College and this is my project demonstrates my skills in HTML, CSS and JavaScript</p>
+</body>
+</html>

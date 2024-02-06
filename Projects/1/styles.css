@@ -1,0 +1,14 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,600");
+
+body {
+    font-family: Poppins;
+    background-image: url("https://img.freepik.com/premium-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_959084-10.jpg");
+    background-size: 100vw;
+    background-color: white;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: none;
+    color: white;
+}

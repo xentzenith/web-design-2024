@@ -1,0 +1,32 @@
+
+        /*for navbar i used codepen template: https://codepen.io/hello-world-exclamation-mark/pen/xxBrOLM */
+
+
+        
+header nav {
+    display: flex;
+    background-color: rgba(100, 100, 100, 0.2);
+    padding: 0px;
+    justify-content: center;
+    z-index: 1;
+    backdrop-filter: blur(
+        8px
+    ); /* Disable this to have a Macos-like top bar
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
+    margin-left: 50px;
+    margin-right: 50px;*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+}
+
+header nav a {
+    transition: color 0.1s ease;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+header nav a:hover {
+    color: #aaa;
+}

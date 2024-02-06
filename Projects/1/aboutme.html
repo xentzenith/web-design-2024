@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        header nav {
+            display: flex;
+            background-color: rgba(100, 100, 100, 0.2);
+            padding: 0px;
+            justify-content: center;
+            z-index: 1;
+            backdrop-filter: blur(
+                8px
+            ); /* Disable this to have a Macos-like top bar
+            border-radius: 0px 0px 10px 10px;
+            border-top: none;
+            margin-left: 50px;
+            margin-right: 50px;*/
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+        }
+
+        header nav a {
+            transition: color 0.1s ease;
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        header nav a:hover {
+            color: #aaa;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 10vh;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0 20vw;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+            width: 20%;
+            border-radius: 50%;
+            border: 5px solid rgb(55, 231, 12);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+            text-align: center;
+        }
+
+        th {
+            color: white;
+            font-size: 1.5em;
+        }
+
+        td {
+            color: white;
+            font-size: 1.5em;
+            border: 1px solid white;
+        }
+
+        iframe {
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        embed {
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Projects/1/index.html">Home</a>
+            <a href="/Projects/1/projects.html">Projects</a>
+            <a href="/Projects/1/aboutme.html">About Me</a>
+            <a href="/Projects/1/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <img src="logo.png">
+    <h1>About me </h1>
+    <p>My name is Ilker Ozturk. I am interested in computer staff since i was a child. 
+        My both uncle pushed me to learning coding in my childhood. 
+        I started with Visual Basic but i don't like it because i had need better language like C. 
+        I learned C, then i feel like same because when you learn something that forcing you to more.
+        Then i started to JavaScript in 2019, i learned coding by copying and pasting from internet. 
+        Of course, i didn't just copy and paste, i tried to understand what i did by editing the code.
+        I learned HTML and CSS in 2020. I am still learning and i am trying to improve myself.
+        Finally i joined to Humber College to improve myself and i am still learning.
+    </p>
+    <p style="color: rgb(0, 255, 0); margin-top: 10vh;">My current marks in web-programming course(sample):</p>
+    <table>
+        <th>
+            <td>Midterm</td>
+            <td>Final</td>
+        </th>
+
+        <tr>
+            <td>HTML</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <p style="color: rgb(8, 177, 255); margin-top: 10vh;">My favourite music:</p>
+    <iframe src="https://open.spotify.com/embed/track/6Z8R6UsFuGXGtiIxiD8ISb?utm_source=generator" width="90%" height="350" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <p style="color: rgb(255, 0, 0); margin-top: 10vh;">How to pronounce my name:</p>
+    <embed width='600'  height='180' src='https://embed.howtopronounce.com/classic/en/turkish/ilker/10154873'>
+</body>
+</html>
