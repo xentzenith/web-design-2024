@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #floatToRight {
+            float: right;
+        }
+
+        input{
+            background-color: black;
+            color: white;
+            border: 1px solid red;
+        }
+        textarea{
+            background-color: black;
+            color: white;
+            border: 1px solid red;
+        }
+        input[type="submit"]{
+            background-color: red;
+            color: white;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(112, 22, 22);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td id="floatToRight">First Name:</td>
+                <td><input type="text" name="first_name" id="first_name" value=""></td>
+            </tr>
+            <tr>
+                <td id="floatToRight">Last Name:</td>
+                <td><input type="text" name="last_name" id="last_name" value=""></td>
+            </tr>
+            <tr>
+                <td id="floatToRight">E-mail:</td>
+                <td><input type="text" name="email" id="email" value=""></td>
+            </tr>
+            <tr>
+                <td id="floatToRight">Comments:</td>
+                <td><textarea cols="20" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+        
+    </form>
+    
+</body>
+</html>

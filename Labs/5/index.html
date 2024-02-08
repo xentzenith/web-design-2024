@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            width: max-content;
+            margin: 0 auto;
+        }
+        form{
+            position: relative;
+            width: max-content;
+            padding: 10px 20px;
+            background-color: beige;
+        }
+        label{
+            float: right;
+        }
+        input[name="name"], input[name="email"], input[name="rating"]{
+            width: 101%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Send Us Your Comments</h1>
+        <p>Required fields marked with an asterisk *</p>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">*Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" placeholder="your first name and last name" required>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="email">*Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="you@yourdomain.com" required>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="rating">Rating (1 - 10)</label>
+                    </td>
+                    <td>
+                        <input type="range" max="10" min="1" step="1" value="10" name="rating">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="comments">*Comments</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+            </table>
+    
+    
+        </form>
+    </div>
+    
+</body>
+</html>

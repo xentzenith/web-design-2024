@@ -16,4 +16,6 @@ Labs
 <ul>
     <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Labs/4/'>Lab 4: Image and Video Implementation To Page</a></li>
     <br>
+    <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Labs/5/'>Lab 5: Form Element in HTML</a></li>
+    <br>
 </ul>
