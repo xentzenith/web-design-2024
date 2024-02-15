@@ -1,0 +1,16 @@
+body{
+    background-color: lightblue;
+}
+
+p{
+    color: darkgray;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img{
+    border: 2px solid black;
+}
