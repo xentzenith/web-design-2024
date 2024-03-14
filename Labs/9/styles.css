@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-size: xx-large;
+    margin: 25vh 75vh;
+}
+
+button{
+    width: 45%;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: rgb(130, 64, 64);
+    color: rgb(0, 255, 0);
+}
