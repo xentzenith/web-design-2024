@@ -14,6 +14,7 @@ Assignments
 
 Labs
 <ul>
+    <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Labs/10/'>Lab 10: Basic GPA Calculator and Previewer</a></li><br>
     <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Labs/9/'>Lab 9: Event Listeners with JS</a></li><br>
 	<li><a href='https://xentzenith.github.io/humber-web-programming-2024/Labs/6/'>Lab 6: Getting Started to CSS</a></li><br>
     <li><a href='https://xentzenith.github.io/humber-web-programming-2024/Labs/5/'>Lab 5: Form Element in HTML</a></li><br>

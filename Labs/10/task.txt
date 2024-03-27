@@ -1,0 +1,28 @@
+Exercise: Simple Grade Calculator
+
+Description:
+
+Create a JavaScript program that calculates and displays the grade of a student based on their numerical score. The program should utilize variables, functions, and basic control flow structures such as if statements, while loops, and switch statements.
+
+Requirements:
+
+ - Define variables to store the student's name, numerical score, and grade.
+ - Write a function to calculate the grade based on the numerical score.
+ - Implement a user interface that prompts the user to enter the student's name and numerical score.
+ - Use if statements to handle different grade ranges and display corresponding messages.
+ - Incorporate a while loop to validate the input and ensure the numerical score is within the valid range (0-100).
+ - Display the calculated grade to the user.
+ - Exercise Steps:
+
+Setup
+    - Initialize variables for student name, numerical score, and grade.
+    - Define a function named calculateGrade to calculate the grade based on the numerical score.
+User Input
+    - Prompt the user to enter the student's name and numerical score using prompt().
+Grade Calculation
+    - Implement the calculateGrade function to determine the grade based on the numerical score.
+    - Define grade ranges and assign grades accordingly (e.g., A, B, C, D, F).
+Display Output
+    - Use if statements to display different messages based on the calculated grade (e.g., "Congratulations! You got an A!").
+Input Validation
+    - Use a while loop to validate the numerical score input and ensure it is within the valid range (0-100).
