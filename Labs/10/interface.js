@@ -19,22 +19,23 @@ function getInputs(){
     stored = []
     
     while(true){
-        var input = prompt("Enter course name, grade (c to cancel)"); 
-        if(input == "c"){
-            break;
-        }
-        input = input.split(",");
-        if(!input[0] || !input[1] || isNaN(Number(input[1]))){
-            alert('Please enter a valid number');
-            return getInputs();
+
+        var input = prompt("Enter course name, grade (c to cancel)")
+        if(input == "c" || input == null){
+            return stored;
         }else{
-            stored.push({course: input[0], grade: input[1]});
+            input = input.split(',');
         }
-
-       
+        try{
+            var num = parseFloat(input[1])
+            if(!input[1]) throw new Error('this is error trigger')
+            if(num<0 || num>100 || isNaN(num)) throw new Error('this is error trigger')
+        }catch{
+            alert('Please enter valid number betweeen the range of 0 and 100')
+            continue;
+        }
+        stored.push({course: input[0], grade: num});
     }
-
-    return stored;
 }
 
 function calculateGPA(){
@@ -57,17 +58,30 @@ function calculateGPA(){
             var gradeValue = getGradeValue(gradeLetter);
             totalGrade += gradeValue;
             totalCourses++;
-            element.innerHTML += "<p>" + course + ": " + gradeLetter + '(' + grade + ')' + "</p>";
+            element.innerHTML += "<p>" + course + ": " + gradeLetter + ' (' + grade + ')' + "</p>";
+
+            if(inputs.length-1 == i){
+                if(!isNaN(grade)){
+                    element.innerHTML += "<hr>";
+                    var gpa = totalGrade / totalCourses;
+                    element.innerHTML += "<br><strong><p>GPA: " + gpa + "</p><strong>";
+                    element.innerHTML += "<br>Grade Letter: " + getGradeLetter(gpa) + "<br>";
+                    element.innerHTML += "<p>Total courses: " + totalCourses + "</p>";
+                    element.innerHTML += "<p>Total grade: " + totalGrade + "</p>";
+                }else{
+                    if(confirm('No courses entered! Do you want to try again?') == true){
+                        location.reload()
+                    }
+                }
+            }
         }
     }
-    element.innerHTML += "<hr>";
-    var gpa = totalGrade / totalCourses;
-    element.innerHTML += "<br><strong><p>GPA: " + gpa + "</p><strong>";
-    element.innerHTML += "<p>Total courses: " + totalCourses + "</p>";
-    element.innerHTML += "<p>Total grade: " + totalGrade + "</p>";
+
+    
 }
 
 function getGradeLetter(grade){
+    if(isNaN(grade)) return 'No courses entered!'
     for(var i = 0; i < gradingScale.length; i++){
         if(grade >= gradingScale[i].min && grade <= gradingScale[i].max){
             return gradingScale[i].grade;
