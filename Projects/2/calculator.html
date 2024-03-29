@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculators</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Humber Construction - Calculators</h1>
+    </header>
+    <nav></nav>
+    <div class="container">
+        <h2>Cost Calculator</h2>
+        <div id="calculator">
+            <label for="length">Length (m):</label>
+            <input type="number" id="length" min="0">
+            <label for="width">Width (m):</label>
+            <input type="number" id="width" min="0">
+            <label for="height">Height (m):</label>
+            <input type="number" id="height" min="0">
+            <button onclick="calculateCost()">Calculate</button>
+            <h5 style="margin-top: 5px;" onclick="openCalculator()">Do you need calculator??</h5>
+        </div>
+        <div id="result"></div>
+        
+        <!-- Table showing scale -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Total Square Meters</th>
+                    <th>Maximum Number of Workers</th>
+                    <th>Scale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 - 100</td>
+                    <td>10</td>
+                    <td>Small</td>
+                </tr>
+                <tr>
+                    <td>101 - 200</td>
+                    <td>20</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>201 - 300</td>
+                    <td>30</td>
+                    <td>Large</td>
+                </tr>
+                <tr>
+                    <td>301 - 400</td>
+                    <td>40</td>
+                    <td>Extra Large</td>
+                </tr>
+                <tr>
+                    <td>401 and above</td>
+                    <td>50</td>
+                    <td>Super Large</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
