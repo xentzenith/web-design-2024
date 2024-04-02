@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 25vh;
+            background-color: white;
+            transition: background-color 500ms linear;
+        }
+    </style>
+</head>
+<body>
+    <button id='mybtn' onclick="showAlert()">Click me!</button>
+    <script>
+        var colors = ['red', 'blue', 'green', 'purple', 'yellow', 'blue'];
+        var btn = document.getElementById('mybtn')
+        function changeBg(){
+            var randomColor = colors[Math.floor(Math.random()*colors.length)];
+            btn.style.backgroundColor = randomColor
+        }
+        function showAlert(){
+            alert('Button clicked!');
+            changeBg();
+        }
+    </script>
+</body>
+</html>

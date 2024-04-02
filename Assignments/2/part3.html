@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <script>
+        /* *********************************************************** */
+        //random generator structure taken from https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
+        
+        function makeid(length) { 
+            let result = '';
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%^&*(){}[]~';
+            const charactersLength = characters.length;
+            let counter = 0;
+            while (counter < length) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            counter += 1;
+            }
+            return result;
+        }
+        /* *********************************************************** */
+        var getUl = document.getElementsByTagName('ul')[0]
+
+        var createEl = document.createElement('li')
+        createEl.textContent = 'Fourth item'
+        getUl.append(createEl)
+
+
+        document.querySelectorAll('li').forEach(function(li) {
+    li.addEventListener('click', function(event) {
+      this.textContent = makeid(event.target.textContent.length);
+    })})
+    </script>
+</body>
+</html>

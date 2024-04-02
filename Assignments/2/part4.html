@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .centerit{
+            margin-left: 20%;
+            margin-top: 8%;
+        }
+        .box1{
+            
+            position: absolute;
+            width: 900px;
+            height: 400px;
+            background-color: yellow;
+            border-radius: 10px;
+            border: 10px rgb(71, 23, 192) solid;
+        }
+
+        .no-border{
+            border: none;
+        }
+
+        .no-lorem{
+            visibility: hidden;
+        }
+        .box2{
+            padding: 20px 15px;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 100px;
+            max-width: 600px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .darktheme{
+            background-color: black;
+            color: gray;
+
+            .box2{
+                background-color: green;
+                color: white;
+            }
+
+            .box1{
+                border-color: white;
+            }
+        }
+
+        .rainbowText{
+            /*https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css*/
+                  animation: colorRotate 3s linear 0s infinite;
+                }
+
+                @keyframes colorRotate {
+                from {
+                    color: #6666ff;
+                }
+                10% {
+                    color: #0099ff;
+                }
+                50% {
+                    color: #00ff00;
+                }
+                75% {
+                    color: #ff3399;
+                }
+                100% {
+                    color: #6666ff;
+                }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="centerit box1">
+        <div style="width: fit-content; left: 25px;" class="centerit box2">
+        <h1 style="margin-top: -15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque nam eaque nostrum? Cumque quaerat sed aliquid vero repudiandae facere tenetur aliquam cupiditate! Quo quaerat eveniet harum eos ad debitis.</h1>  
+        </div>
+    </div>
+    <label for="toggleBorders">Hide <strong>Border</strong></label>
+    <input type="checkbox" name="toggleBorder" onchange="toggleBorder()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="toggleLorem">Hide <strong>Lorem Ipsum</strong></label>
+    <input type="checkbox" name="toggleLorem" onchange="toggleLorem()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="toggleTheme">Dark Theme </label>
+    <input type="checkbox" name="toggleTheme" onchange="toggleTheme()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="toggleRGB">Animated RGB Text </label>
+    <input type="checkbox" name="toggleRGB" onchange="toggleRGB()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <script>
+        function toggleBorder(){
+            document.getElementsByClassName('box1')[0].classList.toggle('no-border')
+        }
+
+        function toggleLorem(){
+            document.getElementsByTagName('h1')[0].classList.toggle('no-lorem')
+        }
+
+        function toggleRGB(){
+            document.getElementsByTagName('h1')[0].classList.toggle('rainbowText')
+        }
+
+        function toggleTheme(){
+            document.getElementsByTagName('html')[0].classList.toggle('darktheme')
+        }
+    </script>
+</body>
+</html>
